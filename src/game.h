@@ -11,6 +11,14 @@
 #include "board.h"
 #include "messages.h"
 
+#ifdef __DEBUG_MODE__
+typedef struct Parametros_Teste {
+	int numero_jogadores;
+	int dificuldade;
+	int numero_turnos;
+} Parametros_Teste;
+#endif // __DEBUG_MODE__
+
 /* Funcoes exportadas */
 
 // Faz tosas as tarefas referentes a batalha
